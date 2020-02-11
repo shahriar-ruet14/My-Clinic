@@ -9,7 +9,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Appointment_Activity">
+        <activity android:name=".Appointment_Activity"
+                  android:label="Request Appointment">
+
+
         </activity>
         <activity android:name=".Splash_Screen">
             <intent-filter>

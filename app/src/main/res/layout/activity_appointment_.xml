@@ -5,9 +5,210 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/temp"
+        android:background="@drawable/appointment_backgroud"
         tools:context=".Appointment_Activity">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInputLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_your_name"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
 
+
+        android:visibility="visible"
+        app:boxBackgroundColor="@color/textfield_color"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:helperText="Ex: Shahriar Mahmud"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textfield_color"
+            android:textCursorDrawable="@drawable/color_cursor">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mailInputLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mail_address"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+
+
+        app:boxBackgroundColor="@color/textfield_color"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:counterEnabled="true"
+
+        app:counterMaxLength="50"
+        app:helperText="Ex:abc@example.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/nameInputLayout4"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textfield_color"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numberInputLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_contact_number"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+
+
+        app:boxBackgroundColor="@color/textfield_color"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:counterEnabled="true"
+
+        app:counterMaxLength="14"
+        app:helperText="Ex:abc@example.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailInputLayout5"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="phone"
+            android:textColor="@color/textfield_color"
+            android:textCursorDrawable="@drawable/color_cursor" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="211dp"
+        android:layout_marginRight="211dp"
+        android:paddingLeft="30sp"
+
+
+
+        android:textColor="@color/textfield_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberInputLayout6"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <Spinner
+        android:id="@+id/doctors_spinner"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/textfield_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/planets_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/numberInputLayout6"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="@string/describe"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+
+        android:visibility="visible"
+        app:boxBackgroundColor="@color/textfield_color"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberInputLayout6"
+        app:layout_constraintVertical_bias="0.61">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/textfield_color"
+            android:textCursorDrawable="@drawable/color_cursor">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1"
+        android:text="Confirm Request"
+        android:paddingBottom="10sp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

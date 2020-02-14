@@ -4,4 +4,38 @@
     <string name="action_settings">Settings</string>
     <string name="hospital_management">My Clinic</string>
     <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name" />
+    <string name="enter_your_na">Enter Your Name</string>
+    <string name="pt_name">Enter Your Name</string>
+    <string name="type_your_name">Enter Name</string>
+    <string name="mail_address">Mail Address</string>
+    <string name="enter_contact_number">Enter Contact Number</string>
+    <string name="describe">Describe your condition in details  your description is very impotant to us</string>
+
+
+    <string-array name="category_list">
+            <item>Select Category</item>
+            <item>Venus</item>
+            <item>Earth</item>
+            <item>Mars</item>
+            <item>Jupiter</item>
+            <item>Saturn</item>
+            <item>Uranus</item>
+            <item>Neptune</item>
+        </string-array>
+
+
+    <string-array name="doctors_list">
+        <item>Select Doctor</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+
 </resources>
